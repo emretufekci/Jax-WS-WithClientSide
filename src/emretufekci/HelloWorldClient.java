@@ -12,6 +12,9 @@ public class HelloWorldClient{
         QName qname = new QName("http://emretufekci/", "HelloWorldImplService");
         Service service = Service.create(url, qname);
         HelloWorld hello = service.getPort(HelloWorld.class);
-        System.out.println(hello.getHelloWorldAsString("FROM EMRETUFEKCI FINALLY"));
+        System.out.println(hello.getHelloWorldAsString("FROM EMRETUFEKCI FINALLY DOCUMENT."));
+
+
+
     }
 }
